@@ -23,6 +23,9 @@ CORS(app, resources={
     }
 })
 
+# Add this line to allow insecure requests for testing
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+
 # ✅ Add CORS headers manually for all responses
 @app.after_request
 def after_request(response):
