@@ -2,7 +2,6 @@ services:
   - type: web
     name: smart-sell-advisor
     env: python
-    region: singapore  # Choose nearest region
     plan: free
     buildCommand: |
       pip install --upgrade pip
